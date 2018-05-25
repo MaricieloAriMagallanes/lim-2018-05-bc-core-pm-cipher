@@ -1,0 +1,21 @@
+body {
+    background-color: lightblue;
+}
+.Textarea {
+    font-family: Garamond,verdana;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background:#ee0467;
+    letter-spacing: 5px;
+    }
+button{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }

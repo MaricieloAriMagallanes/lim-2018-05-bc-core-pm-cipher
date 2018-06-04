@@ -1,49 +1,36 @@
 //Declarar las variables
-var cifrar=document.getElementById("btn");
-var decifrar=document.getElementById("btnde");
+let cifrar=document.getElementById("btn");
+let decifrar=document.getElementById("btnde");
 //Utilizar los eventos del OnClick 
-cifrar.addEventListener("click",cifrado);
-decifrar.addEventListener("click",decifrado);
+cifrar.addEventListener("click",encode);
+decifrar.addEventListener("click",decode);
 
 
 //Realizar las funciones
-   //Funcion de Cifrado
-function cifrado() {
+   
+//Funcion de Cifrado
+function encode() {
+    
     //Declaramos las variables de la funcion
-    var content=document.getElementById('text1').value;
-    var des=parseInt(document.getElementById('offset').value);
-    var resultado = '';
+    let content=document.getElementById('text1').value;
+    let des=parseInt(document.getElementById('offset').value);
+    let resultado = cipher.encode (des,content);
+    
+    //Ponemos los bucles y los tips que dieron en el proyecto
 
-    for(var i = 0; i < content.length; i++){
-        var palabra = content.charCodeAt(i);
-       if (65 <= palabra && palabra <= 90) {
-          resultado += String.fromCharCode((palabra - 65 + des)% 26 + 65); 
-       }else if (97 <= palabra && palabra <= 122){
-          resultado += String.fromCharCode((palabra - 97 + des)% 26 + 97);
-       }else{ resultado += content.charAt(i)}
-       
-    }
-    document.getElementById("root").innerHTML =resultado;
-    document.getElementById("va").innerHTML = des;
+    
+    document.getElementById("re").innerHTML ="El mensaje cifrado es: " + resultado;
+    document.getElementById("va").innerHTML = "El numero de desplazamientos escogido es:" + des;
     
 }
 
     //Realizar la funcion de Decifrado
-function decifrado() {
+function decode() {
         //Declaramos las variables de la funcion
-        var content=document.getElementById('text1').value;
-        var des=parseInt(document.getElementById('offset').value);
-        var resultado = '';
+        let content=document.getElementById('text1').value;
+        let des=parseInt(document.getElementById('offset').value);
+        let resultado = cipher.decode(des,content);
 
-        for(var i = 0; i < content.length; i++){
-            var palabra = content.charCodeAt(i);
-           if (90 <= palabra && palabra <= 97) {
-              resultado += String.fromCharCode(palabra -65 - des)%26; 
-           }else if (122 <= palabra && palabra <= 90){
-              resultado += String.fromCharCode(palabra - 65 - des)%26;
-           }else{ resultado += content.charAt(i)}
-           
-        }
-          document.getElementById("root").innerHTML =resultado; 
+        
+          document.getElementById("re").innerHTML ="El mensaje descifrado es: " + resultado; 
     }
-       

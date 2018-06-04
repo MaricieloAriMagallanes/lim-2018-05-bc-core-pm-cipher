@@ -7,23 +7,39 @@
   </head>
   <body>
     <h1><center><u>Cifrado Cesar</u></center></h1>
-   <h2>Mensaje:</h2>
-   <textarea rows="5" cols="50" id="text1">
-        </textarea>
+    <marquee >El lenguaje ejerce un poder oculto, como la luna sobre las mareas.  "Rita Mae Brown"</marquee>
+    <!-- Aqui vamos a poner la descripción de la web-->
+    <div class="contenido">
+    <img src="imagenes/seguro.jpg" id="img1">
+    <p>Descripción:Esta app esta diseñada para aquellas personas que quieren tener su propio lenguaje de conversación como el idioma de la p que teníamos hace años y hasta ahora algunas 
+    frases son usadas como: hopo lapa  .También cuando quieres tener una conversación ultra secreta, ese mensaje que solo le puedes decir a tus mejores amigos  y a tu almohada.
+    Si estas buscando estas características entonces estas en el lugar perfecto ya que el cifrado cesar es uno de los métodos más confiables y utilizados para que las personas
+    puedan intercambiar mensajes cifrados por un determinado número de desplazamiento.</p>
+  </div>
+    <!--Aqui finaliza la descripción-->
+  <div class="Aplicacion">
+    <h2><p>Mensaje:</p></h2>
+    <textarea placeholder="  Escribe tu mensaje aquí ..." rows="10" cols="35" id="text1"></textarea>
     <p>Offset: &nbsp;<input type="number" min="1" max="25" id="offset"></p>
-        <input type="button" value="Cifrar" id="btn">
-        <input type="button" value="Decifrar" id="btnde"> 
-      <hr>
-        <br>
-        <p>Valor:</p>
+    <center><input type="button" value="Cifrar" class="btn1" id="btn" ></center> <br>
+    <center><input type="button" value="Decifrar" class="btn2" id="btnde"></center> 
+    <hr>
+     <br>
+        <p>Resultado:</p>
         <p id="va"></p>
-        <p>Decifrado</p>
-        <p id="re"></p> 
-        <p>Cifrado:</p>    
+        <p id="re"></p>    
     <div id="root"></div>
+  </div>
+    <div class="piedepagina"> 
+      <footer>
+  <p>Created by: Maricielo Ari Magallanes</p>
+  <p text-align:center>Tienes algunas dudas : <a href="imagenes/Manual.pdf">
+    Descargar Manual</a>    
+  Contactame    <a href="https://www.w3schools.com/html/default.asp">
+  Mas Informacion. </a></p>
+</footer>
+    </div>
     <script src="cipher.js"></script>
-    <script src="index.js">
-     
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>

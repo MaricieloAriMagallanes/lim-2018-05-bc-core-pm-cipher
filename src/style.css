@@ -1,5 +1,14 @@
 body {
-    background-color: lightblue;
+    background-color:beige;
+}
+h1{
+    font-size: 45px;
+    color:mediumpurple;
+    text-align: center;
+}
+a {
+    font-size: 21px;
+    
 }
 .Textarea {
     font-family: Garamond,verdana;

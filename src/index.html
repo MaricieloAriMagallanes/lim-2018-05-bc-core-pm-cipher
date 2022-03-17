@@ -8,25 +8,25 @@
   </head>
   <body>
     <header>
-    <h1><u>Cifrado Cesar</u></h1>
+       <h1><u>Cifrado Cesar</u></h1>
     </header>
-    <nav>
+    <nav id="navegador">
       <ul>
         <li><a href="Descripcion.html">Descripcion</a></li>
         <li><a href="Modo.html">Modo de uso</a></li>
         <li><a href="Aplicacion.html">Aplicaciones</a></li>
       </ul>
     </nav>
-    <section>
+    <section class="contenedor">
       <article>
-        <p>El cifrado César es uno de los primeros métodos de cifrado conocidos históricamente. Es un tipo de cifrado por
+          <p id="parrafo">El cifrado César es uno de los primeros métodos de cifrado conocidos históricamente. Es un tipo de cifrado por
         sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de
         posiciones más adelante en el alfabeto.</p>
       </article>
-    <h2>Mensaje:</h2>
-   <textarea rows="5" cols="50" id="text1">
-        </textarea>
-    <p>Offset: &nbsp;<input type="number" min="1" max="25" id="offset"></p>
+          <h2>Mensaje:</h2>
+    <textarea id="text1" rows="10" cols="50">
+    </textarea>
+    <p>Offset: <input type="number" min="1" max="25" id="offset"></p>
         <input type="button" value="Cifrar" id="btn">
         <input type="button" value="Decifrar" id="btnde"> 
       <hr>
